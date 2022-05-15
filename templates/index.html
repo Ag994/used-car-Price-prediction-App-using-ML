@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>volkswagen used cars price Predictor</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href=".\static\css\style.css">
+
+
+</head> 
+
+<body>
+ <div class="login">
+	<h1>Predict the price for volkswagen used cars</h1>
+
+     <h3>Enter the following values to predict the price</h3>
+
+     <!-- Main Input For Receiving Query to our ML -->  
+    <form action='/predict' method="POST">
+    	<input type="number" name="Year" placeholder="Year" required="required"/>
+        <select name="Gear Box" id="Gear Box" aria-placeholder="Gear Box" required="required">
+            <option value="manual">manual</option>
+            <option value="auto">auto</option>
+        </select>
+
+		<input type="number" name="Horse Power" placeholder="Horse Power" required="required" />
+        <input type="number" name="kilometer" placeholder="kilometer" required="required" />
+        <select name="cartype" id="cartype" aria-placeholder="Car Type">
+            <option value="bus">bus</option>
+            <option value="cabrio">cabrio</option>
+            <option value="coupe">coupe</option>
+            <option value="kleinwagen">kleinwagen</option>
+            <option value="limousine">limousine</option>
+            <option value="suv">suv</option>
+            <option value="van">van</option>
+        </select>
+
+        <select name="model" id="model" aria-placeholder="Model">
+            <option value="beetle">beetle</option>
+            <option value="golf">golf</option>
+            <option value="passat">passat</option>
+            <option value="polo">polo</option>
+            <option value="scirocco">scirocco</option>
+            <option value="tiguan">tiguan</option>
+            <option value="touran">touran</option>
+        </select>
+
+        <select name="fuel_Type" id="fuel_Type" aria-placeholder="Fuel_Type">
+            <option value="diesel">diesel</option>
+            <option value="electric">electric</option>
+            <option value="gasoline">gasoline</option>
+            <option value="hybrid">hybrid</option>
+        </select>
+
+
+
+
+        <button type="submit" class="btn">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
