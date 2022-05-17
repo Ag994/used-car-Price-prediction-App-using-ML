@@ -1,14 +1,8 @@
-from typing_extensions import Required
-from matplotlib.style import library
-# import the required library
-
 import joblib
 from flask import Flask, render_template, request
 import preprocess
 import numpy as np 
 
-
-# creating a new application 
 
 app = Flask(__name__)
 
@@ -20,7 +14,6 @@ scaler = joblib.load('models/scaler.h5')
 def index() :
     return render_template('index.html')
 
-# make a new function to get users input
 
 @app.route('/predict', methods = ['POST', 'GET'])
 def get_prediction() :
