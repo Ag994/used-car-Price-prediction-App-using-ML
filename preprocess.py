@@ -13,9 +13,9 @@ def vehicle_Type (vtype):
         return [0,1,0,0,0,0,0]
     elif vtype.lower() == 'coupe':
         return [0,0,1,0,0,0,0]
-    elif vtype.upper() == 'kleinwagen':
+    elif vtype.lower() == 'kleinwagen':
         return [0,0,0,1,0,0,0]
-    elif vtype.upper() == 'limousine':
+    elif vtype.lower() == 'limousine':
         return [0,0,0,0,1,0,0]
     elif vtype.lower()  == 'suv':
         return [0,0,0,0,0,1,0]

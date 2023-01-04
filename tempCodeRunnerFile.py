@@ -35,7 +35,7 @@ def get_prediction() :
 
     prediction = int(model.predict(scaler.transform([final_data]))[0])
 
-    return render_template('index.html', prediction_text=' The Price Is :{} $'.format(prediction))
+    return render_template('index.html', prediction_text=(' The Price Is :{} $'.format(prediction)))
 
 
 
