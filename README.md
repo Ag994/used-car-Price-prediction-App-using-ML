@@ -1,5 +1,6 @@
 # Used Car Prediction App
 This app is a web-based tool for predicting the price of used cars. It uses a machine learning model trained on a dataset of used car listings to make predictions.
+![](https://github.com/Ag994/used-car-App-deployment./blob/master/volkswagen%20used%20cars%20price%20Predictor%20-%20Google%20Chrome%202023-01-05%2002-11-26.gif)
 
 ## How to use the app
 Go to the app's URL in your web browser.
